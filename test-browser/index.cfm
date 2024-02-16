@@ -38,6 +38,7 @@
 	ASSETS_DIR = expandPath( "/testbox/system/reports/assets" );
 	TESTBOX_VERSION = new testBox.system.TestBox().getVersion();
 </cfscript>
+<cfoutput>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +53,7 @@
 		<script>#fileRead( '#ASSETS_DIR#/js/stupidtable.min.js' )#</script>
 	</cfoutput>
 </head>
-<cfoutput>
+
 <body>
 
 <div id="tb-runner" class="container">
